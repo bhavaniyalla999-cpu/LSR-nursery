@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenue Trees | LSR Nursery - Premium Collection in Kadiyam</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore LSR Nursery's premium collection of avenue trees. Perfect for shade, landscaping, and lining roads and driveways.">
+    <meta name="keywords" content="Avenue Trees, Shade Trees, Landscaping Trees Kadiyam, LSR Nursery Avenue Collection">
+    <meta name="author" content="LSR Nursery">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="lsr-nursery-logo.png">
+    <link rel="apple-touch-icon" href="lsr-nursery-logo.png">
+    <link rel="shortcut icon" href="lsr-nursery-logo.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .avenue-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+        }
+        .avenue-grid-custom {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .plant-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            position: relative;
+        }
+        .plant-card:hover .image-cta-overlay {
+            opacity: 1;
+        }
+        .image-cta-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 5;
+        }
+        .img-whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .plant-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(26, 77, 46, 0.15);
+        }
+        .plant-img-wrapper {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+        .plant-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .plant-card:hover .plant-img {
+            transform: scale(1.05);
+        }
+        .plant-info {
+            padding: 25px;
+        }
+        .plant-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary-green);
+            font-size: 1.5rem;
+        }
+        .plant-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .breadcrumb a {
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+        .back-btn {
+            margin-bottom: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="top-info-left">
+                <span><i class="fas fa-map-marker-alt"></i> <strong>Main:</strong> Kadiyam, Rajahmundry</span>
+                <span class="branch-separator desktop-only">|</span>
+                <span class="desktop-only"><i class="fas fa-phone-alt"></i> +91 9700085340</span>
+            </div>
+            <div class="top-info-right flex-center">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/v/1HHyN7HTdL/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lankalapallisairamnaidu96" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919700085340" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="container flex-between">
+            <div class="logo">
+                <a href="index.html" class="nav-brand">
+                    <img src="lsr-nursery-logo.png" alt="LSR Nursery Logo" class="nav-logo" width="60" height="60">
+                    <div class="nav-brand-text">
+                        <span class="nav-brand-name">LSR Nursery</span>
+                    </div>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#varieties" class="active">Varieties</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="tel:+919700085340" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="avenue-hero">
+        <div class="container">
+            <h1 class="hero-title">Avenue Trees</h1>
+            <p class="hero-subtitle">Majestic, fast-growing trees perfect for landscaping, shade, and boundaries</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <main class="container section-padding">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <a href="index.html#varieties">Varieties</a> / Avenue Trees
+        </div>
+
+        <div class="flex-between">
+            <h2 class="section-title text-left">Our Premium Collection</h2>
+            <a href="index.html#varieties" class="back-btn"><i class="fas fa-arrow-left"></i> All Categories</a>
+        </div>
+        <p class="section-subtitle text-left">Explore our large avenue trees, carefully cultivated to provide instant greenery and majestic beauty to any property.</p>
+
+        <div class="avenue-grid-custom">
+            <!-- Ficus Avenue Tree -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Premium%20Ficus%20Avenue%20Tree." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="outdoor-plants-item2.jpg" onerror="this.src='lsr-nursery-logo.png'" alt="Premium Ficus Avenue Tree" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Premium Ficus Avenue Tree (ఫైకస్)</h3>
+                    <p class="plant-description">A tall, hardy, and dense evergreen tree with strong roots and a thick canopy. Excellent for providing deep shade, creating grand avenues, and absorbing environmental pollution.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Premium%20Ficus%20Avenue%20Tree." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-Tier Topiary Ficus -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Multi-Tier%20Topiary%20Ficus." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="outdoor-plants-item3.jpg" onerror="this.src='lsr-nursery-logo.png'" alt="Multi-Tier Topiary Ficus" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Multi-Tier Topiary Ficus</h3>
+                    <p class="plant-description">A masterpiece of horticultural art, this multi-tier topiary Ficus adds a sophisticated, sculptural element to any garden or entrance. Expertly shaped for a premium look.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Multi-Tier%20Topiary%20Ficus." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ficus Hedge Plants -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ficus%20Hedge%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="outdoor-plants-item5.jpg" onerror="this.src='lsr-nursery-logo.png'" alt="Ficus Hedge Plants" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Ficus Nitida (Hedge Plants)</h3>
+                    <p class="plant-description">Dense and bushy, these Ficus Nitida plants are perfect for creating privacy hedges, green walls, and structured garden borders. Excellent choice for avenue boundaries.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ficus%20Hedge%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-40 text-center">
+            <p class="mb-20">Looking for more varieties? We have 1000+ plants in stock!</p>
+            <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20do%20you%20have%20more%20avenue%20tree%20varieties%20available?" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> Inquire About More Varieties
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="lsr-nursery-logo.png" alt="LSR Nursery" width="80">
+                </div>
+                <p class="footer-tagline">Premium Plant Destination in Kadiyam</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/v/1HHyN7HTdL/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lankalapallisairamnaidu96" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919700085340" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Plant Categories</h4>
+                <ul>
+                    <li><a href="indoor-plants.html">Indoor Plants</a></li>
+                    <li><a href="outdoor-plants.html">Outdoor Plants</a></li>
+                    <li><a href="fruit-plants.html">Fruit Plants</a></li>
+                    <li><a href="avenue-trees.html">Avenue Trees</a></li>
+                    <li><a href="landscaping-works.html">Landscaping Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Kadiyam Region, Rajahmundry</p>
+                <p>Andhra Pradesh, 533234</p>
+                <p>+91 9700085340</p>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 LSR Nursery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919700085340" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Plants | LSR Nursery - Premium Collection in Kadiyam</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore LSR Nursery's premium collection of fruit plants, including Mango, Guava, Loquat, and more. Healthy and high-yielding varieties.">
+    <meta name="keywords" content="Fruit Plants, Loquat Kadiyam, Mango Trees Andhra Pradesh, LSR Nursery Fruit Collection, High Yielding Fruit Plants">
+    <meta name="author" content="LSR Nursery">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="lsr-nursery-logo.png">
+    <link rel="apple-touch-icon" href="lsr-nursery-logo.png">
+    <link rel="shortcut icon" href="lsr-nursery-logo.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .fruit-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1596560647336-d7482fc60f64?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+        }
+        .fruit-grid-custom {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .plant-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            position: relative;
+        }
+        .plant-card:hover .image-cta-overlay {
+            opacity: 1;
+        }
+        .image-cta-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 5;
+        }
+        .img-whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .plant-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(26, 77, 46, 0.15);
+        }
+        .plant-img-wrapper {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+        .plant-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .plant-card:hover .plant-img {
+            transform: scale(1.05);
+        }
+        .plant-info {
+            padding: 25px;
+        }
+        .plant-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary-green);
+            font-size: 1.5rem;
+        }
+        .plant-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .breadcrumb a {
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+        .back-btn {
+            margin-bottom: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+        .featured-plant-section {
+            background: var(--bg-light);
+            border-radius: 30px;
+            padding: 50px;
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .featured-plant-section {
+                grid-template-columns: 1fr;
+                padding: 30px;
+            }
+        }
+        .featured-img-wrapper {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            background: #eee;
+        }
+        .featured-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="top-info-left">
+                <span><i class="fas fa-map-marker-alt"></i> <strong>Main:</strong> Kadiyam, Rajahmundry</span>
+                <span class="branch-separator desktop-only">|</span>
+                <span class="desktop-only"><i class="fas fa-phone-alt"></i> +91 9700085340</span>
+            </div>
+            <div class="top-info-right flex-center">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/v/1HHyN7HTdL/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lankalapallisairamnaidu96" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919700085340" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="container flex-between">
+            <div class="logo">
+                <a href="index.html" class="nav-brand">
+                    <img src="lsr-nursery-logo.png" alt="LSR Nursery Logo" class="nav-logo" width="60" height="60">
+                    <div class="nav-brand-text">
+                        <span class="nav-brand-name">LSR Nursery</span>
+                    </div>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#varieties" class="active">Varieties</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="tel:+919700085340" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="fruit-hero">
+        <div class="container">
+            <h1 class="hero-title">Fruit Plants</h1>
+            <p class="hero-subtitle">High-yielding, healthy fruit tree varieties for your garden and farm</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <main class="container section-padding">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <a href="index.html#varieties">Varieties</a> / Fruit Plants
+        </div>
+
+        <div class="flex-between">
+            <h2 class="section-title text-left">Our Premium Collection</h2>
+            <a href="index.html#varieties" class="back-btn"><i class="fas fa-arrow-left"></i> All Categories</a>
+        </div>
+        <p class="section-subtitle text-left">Discover our hand-picked fruit plant varieties, nurtured for health and high productivity.</p>
+
+
+
+        <div class="fruit-grid-custom">
+            <!-- Loquat Card -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Loquat%20fruit%20plant." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="loquat.png" onerror="this.src='lsr-nursery-logo.png'" alt="Loquat Fruit Plant" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Loquat (లోకోట్)</h3>
+                    <p class="plant-description">A beautiful evergreen fruit tree producing clusters of sweet, tangy yellow-orange fruits.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Loquat%20fruit%20plant." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Guava Card -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20Guava%20fruit%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="guava.png" onerror="this.src='lsr-nursery-logo.png'" alt="Guava Tree" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Guava (జామ)</h3>
+                    <p class="plant-description">Healthy Guava plants that produce large, sweet, and nutritious fruits.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20Guava%20fruit%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cherry of Rio Grande Card -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Cherry%20of%20Rio%20Grande%20plant." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="cherry.png" onerror="this.src='lsr-nursery-logo.png'" alt="Cherry of Rio Grande Plant" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Cherry of Rio Grande (చెర్రీ ఆఫ్ రియో గ్రాండే)</h3>
+                    <p class="plant-description">A beautiful fruit-bearing plant known for its sweet, dark red to purple cherries that taste similar to standard cherries.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Cherry%20of%20Rio%20Grande%20plant." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banana Mango Card -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Banana%20Mango%20plant." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="banana-mango.png" onerror="this.src='lsr-nursery-logo.png'" alt="Banana Mango" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Banana Mango (బనానా మాంగో)</h3>
+                    <p class="plant-description">A premium exotic variety known for its unique elongated shape and honey-like sweetness. Fiberless and buttery texture.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Banana%20Mango%20plant." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jaboticaba Sabara Card -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Jaboticaba%20Sabara%20plant." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="jaboticaba-sabara.png" onerror="this.src='lsr-nursery-logo.png'" alt="Jaboticaba Sabara" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Jaboticaba - Sabara (జాబోటికబ సబారా)</h3>
+                    <p class="plant-description">A unique Brazilian grape tree where sweet, dark purple fruits grow directly on the trunk. Exotic and highly productive.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Jaboticaba%20Sabara%20plant." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Cashew Card -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Cashew%20plant." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <div class="plant-img-wrapper">
+                    <img src="cashew.png" onerror="this.src='lsr-nursery-logo.png'" alt="Cashew Plant - క్యాష్యూ" class="plant-img">
+                </div>
+                <div class="plant-info">
+                    <h3>Cashew (క్యాష్యూ)</h3>
+                    <p class="plant-description">A hardy tropical evergreen tree producing juicy cashew apples and the world-renowned cashew nuts. High-yielding variety perfectly suited for tropical climates.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Cashew%20plant." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="lsr-nursery-logo.png" alt="LSR Nursery" width="80">
+                </div>
+                <p class="footer-tagline">Premium Plant Destination in Kadiyam</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/v/1HHyN7HTdL/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lankalapallisairamnaidu96" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919700085340" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Plant Categories</h4>
+                <ul>
+                    <li><a href="indoor-plants.html">Indoor Plants</a></li>
+                    <li><a href="outdoor-plants.html">Outdoor Plants</a></li>
+                    <li><a href="fruit-plants.html">Fruit Plants</a></li>
+                    <li><a href="avenue-trees.html">Avenue Trees</a></li>
+                    <li><a href="landscaping-works.html">Landscaping Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Kadiyam Region, Rajahmundry</p>
+                <p>Andhra Pradesh, 533234</p>
+                <p>+91 9700085340</p>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 LSR Nursery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919700085340" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

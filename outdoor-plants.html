@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Plants | LSR Nursery - Premium Collection in Kadiyam</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore LSR Nursery's premium collection of outdoor plants, including Ficus, palms, and decorative trees. Perfect for landscaping, gardens, and resorts.">
+    <meta name="keywords" content="Outdoor Plants, Ficus Nursery Kadiyam, Landscaping Plants Andhra Pradesh, LSR Nursery Outdoor Collection">
+    <meta name="author" content="LSR Nursery">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="lsr-nursery-logo.png">
+    <link rel="apple-touch-icon" href="lsr-nursery-logo.png">
+    <link rel="shortcut icon" href="lsr-nursery-logo.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .outdoor-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+        }
+        .outdoor-grid-custom {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .plant-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            position: relative;
+        }
+        .plant-card:hover .image-cta-overlay {
+            opacity: 1;
+        }
+        .image-cta-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 5;
+        }
+        .img-whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .plant-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(26, 77, 46, 0.15);
+        }
+        .plant-img {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .plant-info {
+            padding: 25px;
+        }
+        .plant-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary-green);
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .breadcrumb a {
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+        .back-btn {
+            margin-bottom: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="top-info-left">
+                <span><i class="fas fa-map-marker-alt"></i> <strong>Main:</strong> Kadiyam, Rajahmundry</span>
+                <span class="branch-separator desktop-only">|</span>
+                <span class="desktop-only"><i class="fas fa-phone-alt"></i> +91 9700085340</span>
+            </div>
+            <div class="top-info-right flex-center">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/v/1HHyN7HTdL/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lankalapallisairamnaidu96" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919700085340" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="container flex-between">
+            <div class="logo">
+                <a href="index.html" class="nav-brand">
+                    <img src="lsr-nursery-logo.png" alt="LSR Nursery Logo" class="nav-logo" width="60" height="60">
+                    <div class="nav-brand-text">
+                        <span class="nav-brand-name">LSR Nursery</span>
+                    </div>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#varieties" class="active">Varieties</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="tel:+919700085340" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main class="container section-padding">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <a href="index.html#varieties">Varieties</a> / Outdoor Plants
+        </div>
+
+        <h1 class="section-title text-left">Outdoor Plants Collection</h1>
+        <p class="section-subtitle text-left">Premium quality outdoor and landscaping plants nurtured with care for your green spaces.</p>
+
+        <div class="outdoor-grid-custom">
+            <!-- Braided Trunk Ficus (The new image) -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Braided%20Trunk%20Ficus%20plant." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-plants-item2.jpg" alt="Braided Trunk Ficus" class="plant-img">
+                <div class="plant-info">
+                    <h3>Braided Trunk Ficus</h3>
+                    <p>An exquisite ornamental plant featuring a unique braided trunk. This healthy, potted Ficus is a perfect statement piece for premium garden landscaping and home entrances.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Braided%20Trunk%20Ficus%20plant." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-Tier Topiary Ficus (The new image) -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Multi-Tier%20Topiary%20Ficus." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-plants-item3.jpg" alt="Multi-Tier Topiary Ficus" class="plant-img">
+                <div class="plant-info">
+                    <h3>Multi-Tier Topiary Ficus</h3>
+                    <p>A masterpiece of horticultural art, this multi-tier topiary Ficus adds a sophisticated, sculptural element to any garden or entrance. Expertly shaped for a premium look.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Multi-Tier%20Topiary%20Ficus." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Areca Palm (The new image) -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Areca%20Palm%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-plants-item4.jpg" alt="Areca Palm" class="plant-img">
+                <div class="plant-info">
+                    <h3>Areca Palm (Lush Green)</h3>
+                    <p>Known for its elegant, feathery fronds, the Areca Palm is a popular choice for creating a tropical atmosphere in gardens and outdoor patios. Healthy and well-maintained.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Areca%20Palm%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ficus Hedge Plants (The new image) -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ficus%20Hedge%20outdoor%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-plants-item5.jpg" alt="Ficus Hedge Plants" class="plant-img">
+                <div class="plant-info">
+                    <h3>Ficus Nitida (Hedge Plants)</h3>
+                    <p>Dense and bushy, these Ficus Nitida plants are perfect for creating privacy hedges, green walls, and structured garden borders. Healthy, potted, and ready for planting.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ficus%20Hedge%20outdoor%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ficus Lyrata (The new image) -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ficus%20Lyrata%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-plants-item6.jpg" alt="Ficus Lyrata" class="plant-img">
+                <div class="plant-info">
+                    <h3>Ficus Lyrata (Fiddle Leaf Fig)</h3>
+                    <p>Highly sought-after for its large, violin-shaped leaves, the Ficus Lyrata is a stunning architectural plant that thrives in outdoor shaded areas and bright indoor spaces.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ficus%20Lyrata%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buddha Belly Bamboo (The new image) -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Buddha%20Belly%20Bamboo%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-plants-item7.jpg" alt="Buddha Belly Bamboo" class="plant-img">
+                <div class="plant-info">
+                    <h3>Buddha Belly Bamboo</h3>
+                    <p>Characterized by its unique, swollen internodes, the Buddha Belly Bamboo is a fascinating ornamental plant perfect for adding texture and interest to your tropical garden.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Buddha%20Belly%20Bamboo%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ball Topiary -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ball%20Topiary%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-plants-item8.jpg" alt="Ball Topiary" class="plant-img">
+                <div class="plant-info">
+                    <h3>Premium Ball Topiary</h3>
+                    <p>Expertly pruned into a perfect sphere, these ball topiaries are ideal for formal garden layouts, pathway lining, and sophisticated patio decoration. Lush and evergreen.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Ball%20Topiary%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Variegated Ficus -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Variegated%20Ficus%20plant." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-ficus-variegated.jpg" alt="Variegated Ficus Tree" class="plant-img">
+                <div class="plant-info">
+                    <h3>Variegated Ficus</h3>
+                    <p>A stunning ornamental tree with distinctive green and cream leaves. Perfect for formal gardens, adding a bright, sophisticated pop of color to any landscape.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Variegated%20Ficus%20plant." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Silver Leucophyllum -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Silver%20Leucophyllum%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-silver-leucophyllum.jpg" alt="Silver Leucophyllum Texas Sage" class="plant-img">
+                <div class="plant-info">
+                    <h3>Silver Leaved (Leucophyllum)</h3>
+                    <p>Highly drought-tolerant ornamental plant with striking silver foliage. Produces delicate purple blooms and is perfect for adding unique texture to sunny garden beds.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Silver%20Leucophyllum%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lady Palm -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Lady%20Palm%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-lady-palm.jpg" alt="Lady Palm Rhapis excelsa" class="plant-img">
+                <div class="plant-info">
+                    <h3>Lady Palm (Rhapis)</h3>
+                    <p>An elegant, multi-stemmed palm with fan-shaped fronds. Exceptionally hardy and thrive in shaded outdoor areas, ideal for porch corners or shaded landscaping.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Lady%20Palm%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avenue Tree Nursery -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20bulk%20Avenue%20Tree%20saplings." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-avenue-nursery.jpg" alt="Avenue Tree Nursery Stock" class="plant-img">
+                <div class="plant-info">
+                    <h3>Avenue Tree Nursery Stock</h3>
+                    <p>Lush, healthy young avenue trees nurtured in our nursery. Perfect for large-scale landscaping projects, roadside plantations, and creating green buffers.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20bulk%20Avenue%20Tree%20saplings." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tall Ornamental Palms -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Tall%20Ornamental%20Palms." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-tall-palm.jpg" alt="Tall Ornamental Palms" class="plant-img">
+                <div class="plant-info">
+                    <h3>Tall Ornamental Palms</h3>
+                    <p>Majestic tall palms providing immediate vertical scale and a tropical feel. Ideal for resorts, gated communities, and premium garden entrances.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Tall%20Ornamental%20Palms." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bogada Specimen Tree -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Bogada%20Specimen%20Tree." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-bogada-tree.jpg" alt="Bogada Specimen Tree Mimusops elengi" class="plant-img">
+                <div class="plant-info">
+                    <h3>Bogada Specimen Tree</h3>
+                    <p>A premium specimen tree (Mimusops elengi) known for its dense evergreen canopy. Expertly grown to 30x30 size, perfect for shade in large gardens and parks.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Bogada%20Specimen%20Tree." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pink Bougainvillea -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Vibrant%20Pink%20Bougainvillea." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-bougainvillea.jpg" alt="Vibrant Pink Bougainvillea" class="plant-img">
+                <div class="plant-info">
+                    <h3>Vibrant Pink Bougainvillea</h3>
+                    <p>A stunning explosion of color for your outdoor space. Hardy and drought-tolerant climber perfect for pergolas, walls, and vibrant landscape splashes.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Vibrant%20Pink%20Bougainvillea." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red Cordyline -->
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Premium%20Red%20Cordyline%20plants." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="outdoor-cordyline-red.jpg" alt="Premium Red Cordyline" class="plant-img">
+                <div class="plant-info">
+                    <h3>Premium Red Cordyline</h3>
+                    <p>Striking deep red foliage that adds a dramatic, tropical contrast to gardens. A hardy choice for both ground planting and large decorative pots.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Premium%20Red%20Cordyline%20plants." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <div class="image-cta-overlay">
+                    <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Foxtail%20Palms." class="img-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+                <img src="about-nursery.jpg" alt="Premium Foxtail Palms" class="plant-img">
+                <div class="plant-info">
+                    <h3>Foxtail Palms (Premium)</h3>
+                    <p>High-quality Foxtail Palms available for landscape decoration. Known for their lush, fox-tail-like fronds and elegant growth.</p>
+                    <div class="mt-20">
+                        <a href="https://wa.me/919700085340?text=Hello%20LSR%20Nursery%2C%20I%20am%20interested%20in%20the%20Foxtail%20Palms." class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Outdoor Plants -->
+
+
+
+        </div>
+
+        <div class="mt-40 text-center">
+            <a href="index.html#varieties" class="btn btn-outline">Explore All Categories</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="lsr-nursery-logo.png" alt="LSR Nursery" width="80">
+                </div>
+                <p class="footer-tagline">Premium Plant Destination in Kadiyam</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="indoor-plants.html">Indoor Plants</a></li>
+                    <li><a href="outdoor-plants.html">Outdoor Plants</a></li>
+                    <li><a href="fruit-plants.html">Fruit Plants</a></li>
+                    <li><a href="avenue-trees.html">Avenue Trees</a></li>
+                    <li><a href="landscaping-works.html">Landscaping Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Kadiyam, Andhra Pradesh</p>
+                <p>+91 9700085340</p>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 LSR Nursery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919700085340" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
