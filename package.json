@@ -1,0 +1,28 @@
+{
+  "name": "lsr-nursery",
+  "version": "1.0.0",
+  "description": "LSR Nursery - Premium Plant Nursery in Kadiyam, Andhra Pradesh",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavaniyalla999-cpu/LSR-nursery.git"
+  },
+  "keywords": [
+    "nursery",
+    "plants",
+    "kadiyam",
+    "andhra-pradesh"
+  ],
+  "author": "LSR Nursery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavaniyalla999-cpu/LSR-nursery/issues"
+  },
+  "homepage": "https://github.com/bhavaniyalla999-cpu/LSR-nursery#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
